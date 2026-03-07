@@ -4,7 +4,7 @@ def aplicar_softmax(logits):
     exponencial = np.exp(logits - np.max(logits, axis=-1, keepdims=True))
     return exponencial / np.sum(exponencial, axis=-1, keepdims=True)
 
-def calcular_atencao(encoder_output, decoder_state):
+def calcular_atencao_cruzada(encoder_output, decoder_state):
     d_k = encoder_output.shape[-1]
     
     WQ = np.random.normal(size=(d_k, d_k))
@@ -26,7 +26,7 @@ def calcular_atencao(encoder_output, decoder_state):
 conhecimento_do_frances = np.random.standard_normal((1, 10, 512))
 traducao_em_andamento = np.random.standard_normal((1, 4, 512))
 
-resultado = calcular_atencao(conhecimento_do_frances, traducao_em_andamento)
+resultado = calcular_atencao_cruzada(conhecimento_do_frances, traducao_em_andamento)
 
 print(f"Dimensões da representação final: {resultado.shape}")
 print("Ponte entre linguagens construída com sucesso.")
