@@ -437,3 +437,8 @@ Mesmo sem treinamento real, ele mostra:
 ---
 
 Este laboratório serve como uma **ponte entre teoria matemática e implementação real de modelos de linguagem modernos**.
+
+## Nota de Integridade e Créditos
+Este trabalho seguiu rigorosamente as diretrizes de integridade do laboratório:
+
+Uso de IA: Ferramentas de IA Generativa (Gemini/ChatGPT) foram consultadas exclusivamente para suporte em sintaxe da biblioteca numpy e para auxílio na estruturação deste documento explicativo. Elas auxiliaram na resolução de dúvidas de sintaxe da biblioteca numpy e no brainstorming para a estruturação lógica em pequenas partes do código, algumas dúvidas mesmo. Mas toda a implementação foi eu tentando fazer passo a passo, garantindo que cada parte do código fosse de acordo com o que foi pedido no laboratório. A documentação foi revisada e validada por mim, garantindo que o trabalho reflita meu entendimento sobre o funcionamento do mecanismo de atenção (Self e Cross-Attention), o papel da máscara causal na preservação da autoregressão e o processo de geração de tokens, conforme as regras do contrato pedagógico.
